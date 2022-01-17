@@ -274,10 +274,28 @@ body {
             border-radius: 10px;
             text-decoration: none;
             background-color: $red;
-            width: 100%;
+            width: 70%;
+            margin-left: 10%;
             padding: 5%;
             color: white;
             margin-bottom: 20px;
+            display: flex;
+            height: 33px;
+            justify-content: space-around;
+
+            .corona_Melden_Wrapper {
+                display: flex;
+                p {
+                    opacity: 1 !important;
+                    margin-top: 4px;
+                    margin-left: 5px;
+                }
+                .corona {
+                    margin-top: -6px;
+                    height: 45px;
+                }
+            }
+            
         }
     }
 }
