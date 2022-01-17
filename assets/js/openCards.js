@@ -12,7 +12,7 @@ function openCard(element, index, content, open = true) {
 
         trafficLight.style.animation = 'open_trafficLight 300ms ease-in-out forwards';
         card.style.animation = 'open_card 300ms ease-in-out forwards';
-        description.style.animation = 'open_Description 500ms ease-in-out forwards';
+        description.style.animation = 'open_Description 300ms ease-in-out forwards';
         moreButton.style.animation = 'open_moreButton 500ms ease-in-out forwards';
 
         description.innerHTML = content;
@@ -26,7 +26,10 @@ function openCard(element, index, content, open = true) {
         description.style.animation = 'close_Description 500ms ease-in-out forwards';
         moreButton.style.animation = 'close_moreButton 500ms ease-in-out forwards';
         
-        description.innerHTML = '';
+        
+        setTimeout(() => {
+            description.innerHTML = '';
+        }, 200)
         moreButton_p.innerHTML = 'Details';
     }
     //console.log(element)
