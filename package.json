@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass ./assets/sass/:./assets/css/",
     "start-local": "node nakcoronalights.js",
-    "start-live": "git reset --hard; git pull; npm i; npm run sass; forever restart website-zeus.js"
+    "start-live": "git reset --hard; git pull; npm i; npm run sass; forever restart nakcoronalights.js"
   },
   "repository": {
     "type": "git",
