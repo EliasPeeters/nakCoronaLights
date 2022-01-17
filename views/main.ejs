@@ -5,19 +5,21 @@
         <script data-goatcounter="https://nakcoronalights.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+        
     </head>
 
     <body>
         <div class="contentWrapper">
             <img class="logo" src="/assets/images/logo.png">
 
-            <% data.forEach(element => { %>
-                <div class="card">
+            <% data.forEach((element, index) => { %>
+                <div class="card card_<%= index %>">
                     <div class="card_Heading_Div">
                         <h3 class="card_Heading"><%= element.heading %> </h3>
                     </div>
     
-                    <div class="trafficLight <%= element.color %>">
+                    <div class="trafficLight trafficLight_<%= index %>  <%= element.color %>">
                         <div class="trafficLightBulbMarginLeft"></div>
     
                         <div class="trafficLightBulb_Wrapper">
@@ -31,21 +33,28 @@
                             <div class="trafficLightBulb green"></div>
     
                         </div>
-                        
                     </div>
     
-                    <div class="description">
-                        <p><%= element.description %></p>
+                    <div class="description description_<%= index %>">
+                        <p class="description_p_<%= index %>"></p>
+                    </div>
+
+                    <div class="moreButton moreButton_<%= index %>" onclick="openCard(this, <%= index %>, '<%= element.description %>')">
+                        <p class="moreButton_p_<%= index %>">Details</p>
                     </div>
                 </div>
             <% }); %>
 
             <div class="footer">
+                <a class="corona_Melden" href="mailto:corona@nordakademie.de">Corona Fall melden</a>
+
+
                 <p>© 2022, Elias Peeters</p>
-                <a href="mailto:elias.peeters@nordakademie.de">Contact: elias.peeters@nordakademie.de</a>
+                <a class="mail" href="mailto:stupa@nordakademie.de">Contact: stupa@nordakademie.de</a>
             </div>
    
         </div>
     
+        <script src="/assets/js/openCards.js"></script>
     </body>
 </html>
