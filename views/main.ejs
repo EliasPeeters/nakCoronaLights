@@ -52,20 +52,31 @@
             <div class="footer">
 
                 <div class="corona_Melden">
-                    <div class="corona_Melden_Wrapper">
+                    <div class="corona_Melden_Wrapper" onclick="mail('corona@nordakademie.de')">
                         <img class="corona" src="/assets/images/corona.png">
                         <p>Fall melden</p>
                     </div>
                 </div>
 
+                <div class="corona_Melden stupa" onclick="mail('stupa@nordakademie.de')">
+                    <div class="corona_Melden_Wrapper">
+                        <img class="corona" src="/assets/images/stupa.png">
+                        <p>StuPa kontaktieren</p>
+                    </div>
+                </div>
+
 
                 <p>© 2022, Elias Peeters</p>
-                
-                <a class="mail" href="mailto:stupa@nordakademie.de">Contact: stupa@nordakademie.de</a>
             </div>
    
         </div>
     
         <script src="/assets/js/openCards.js"></script>
+
+        <script>
+            function mail(adress) {
+                window.location.href = `mailto:${adress}`;
+            }
+        </script>
     </body>
 </html>

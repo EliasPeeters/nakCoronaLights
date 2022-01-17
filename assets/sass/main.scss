@@ -282,6 +282,11 @@ body {
             display: flex;
             height: 33px;
             justify-content: space-around;
+            cursor: pointer;
+            
+            &.stupa {
+                background-color: $blue;
+            }
 
             .corona_Melden_Wrapper {
                 display: flex;
@@ -294,6 +299,8 @@ body {
                     margin-top: -6px;
                     height: 45px;
                 }
+
+                
             }
             
         }

@@ -220,6 +220,10 @@ body {
   display: flex;
   height: 33px;
   justify-content: space-around;
+  cursor: pointer;
+}
+.contentWrapper .footer .corona_Melden.stupa {
+  background-color: #00387A;
 }
 .contentWrapper .footer .corona_Melden .corona_Melden_Wrapper {
   display: flex;
