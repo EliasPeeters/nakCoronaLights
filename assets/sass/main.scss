@@ -127,7 +127,12 @@ body {
         min-height: 50px;
         margin-top: 50px;
         opacity: 0.5;
-        text-align: right;
+        text-align: center;
         padding: 5%;
+
+        a {
+            color: $blue;
+            opacity: 1;
+        }
     }
 }
