@@ -1,0 +1,26 @@
+{
+  "name": "nakcoronalights",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nakcoronalights.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./assets/sass/:./assets/css/",
+    "start-local": "node nakcoronalights.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasPeeters/nakCoronaLights.git"
+  },
+  "author": "Elias Peeters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliasPeeters/nakCoronaLights/issues"
+  },
+  "homepage": "https://github.com/EliasPeeters/nakCoronaLights#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "sass": "^1.48.0"
+  }
+}

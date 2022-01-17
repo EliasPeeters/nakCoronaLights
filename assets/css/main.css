@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Avenir";
+}
+
+.contentWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contentWrapper .logo {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+.contentWrapper .card {
+  width: 80%;
+  margin-left: 10%;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+.contentWrapper .card .card_Heading_Div {
+  background-color: #00387A;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 20px;
+}
+.contentWrapper .card .card_Heading_Div .card_Heading {
+  color: white;
+  margin: 0;
+}
+.contentWrapper .card .trafficLight {
+  position: absolute;
+  left: 8%;
+  top: 25%;
+  height: 33vw;
+  width: 13vw;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 10px;
+  max-width: 59px;
+  max-height: 159px;
+}
+.contentWrapper .card .trafficLight .trafficLightBulbMarginLeft {
+  width: 3vw;
+  max-width: 13.5px;
+  height: 100%;
+  float: left;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Margin_Top {
+  height: 3vw;
+  max-height: 16px;
+  width: 100%;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper {
+  display: grid;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb {
+  width: 7vw;
+  max-width: 32px;
+  height: 7vw;
+  max-height: 32px;
+  background-color: #00387A;
+  border-radius: 1000px;
+  opacity: 0.2;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.red {
+  background-color: #FF3A36;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.yellow {
+  background-color: #FFDA00;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.green {
+  background-color: #00BC2B;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.selected {
+  opacity: 1;
+}
+.contentWrapper .card .trafficLight.red .trafficLightBulb_Wrapper .trafficLightBulb.red {
+  opacity: 1;
+}
+.contentWrapper .card .trafficLight.yellow .trafficLightBulb_Wrapper .trafficLightBulb.yellow {
+  opacity: 1;
+}
+.contentWrapper .card .trafficLight.green .trafficLightBulb_Wrapper .trafficLightBulb.green {
+  opacity: 1;
+}
+.contentWrapper .card .description {
+  padding-left: 30%;
+  padding-right: 10%;
+}
+.contentWrapper .card .description p {
+  display: inline-block;
+}
+.contentWrapper .footer {
+  width: 90%;
+  min-height: 50px;
+  margin-top: 50px;
+  opacity: 0.5;
+  text-align: right;
+  padding: 5%;
+}
+
+/*# sourceMappingURL=main.css.map */

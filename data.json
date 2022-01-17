@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "heading": "Mensa",
+            "color": "yellow",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. " 
+        },
+        {
+            "heading": "Campus",
+            "color": "yellow",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. " 
+        },
+        {
+            "heading": "Klausureinsicht",
+            "color": "green",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. " 
+        },
+        {
+            "heading": "Strammtisch",
+            "color": "red",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. " 
+        }
+    ]
+}

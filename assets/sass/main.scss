@@ -1,0 +1,133 @@
+$blue: #00387A;
+$red: #FF3A36;
+$yellow: #FFDA00;
+$green: #00BC2B;
+
+body {
+    margin: 0;
+    font-family: 'Avenir';
+}
+
+.contentWrapper {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .logo {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 80%;
+        margin-left: 10%;
+        height: 250px;
+        box-shadow: 0 0 10px rgba(1,1,1,0.2);
+        border-radius: 20px;
+        margin-top: 40px;
+        position: relative;
+
+        .card_Heading_Div {
+            background-color: $blue;
+            border-radius: 20px 20px 0 0;
+            padding: 10px 20px;
+
+            .card_Heading {
+                color: white;
+                margin: 0;
+            }
+        }
+
+        .trafficLight {
+            position: absolute;
+            left: 8%;
+            top: 25%;
+            height: 33vw;
+            width: 13vw;
+            box-shadow: 0 0 10px rgba(1,1,1,0.2);;
+            border-radius: 10px;
+            max-width: 59px;
+            max-height: 159px;
+
+            .trafficLightBulbMarginLeft {
+                width: 3vw;
+                max-width: 13.5px;
+                height: 100%;
+                float: left;
+            }
+
+            .trafficLightBulb_Margin_Top {
+                height: 3vw;
+                max-height: 16px;
+                width: 100%;
+            }
+
+            .trafficLightBulb_Wrapper {
+                display: grid;
+
+                .trafficLightBulb {
+                    width: 7vw;
+                    max-width: 32px;
+                    height: 7vw;
+                    max-height: 32px;
+                    background-color: $blue;
+                    border-radius: 1000px;
+                    opacity: 0.2;
+    
+                    &.red {
+                        background-color: $red;
+                    }
+
+                    &.yellow {
+                        background-color: $yellow;
+                    }
+
+                    &.green {
+                        background-color: $green;
+                    }
+
+                    &.selected {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.red .trafficLightBulb_Wrapper .trafficLightBulb {
+                &.red {
+                    opacity: 1;
+                }
+            }
+
+            &.yellow .trafficLightBulb_Wrapper .trafficLightBulb {
+                &.yellow {
+                    opacity: 1;
+                }
+            }
+
+            &.green .trafficLightBulb_Wrapper .trafficLightBulb {
+                &.green {
+                    opacity: 1;
+                }
+            }
+            
+        }
+
+        .description {
+            padding-left: 30%;
+            padding-right: 10%;
+            p {
+                display: inline-block
+            }
+            
+        }
+    }
+
+    .footer {
+        width: 90%;
+        min-height: 50px;
+        margin-top: 50px;
+        opacity: 0.5;
+        text-align: right;
+        padding: 5%;
+    }
+}
