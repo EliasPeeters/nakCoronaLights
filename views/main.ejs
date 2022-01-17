@@ -18,30 +18,34 @@
                     <div class="card_Heading_Div">
                         <h3 class="card_Heading"><%= element.heading %> </h3>
                     </div>
+
+                    <div class="contentwrapper">
+                        <div class="trafficLight trafficLight_<%= index %>  <%= element.color %>">
+                            <div class="trafficLightBulbMarginLeft"></div>
+        
+                            <div class="trafficLightBulb_Wrapper">
+                                <div class="trafficLightBulb_Margin_Top"></div>
+                                <div class="trafficLightBulb red"></div>
+        
+                                <div class="trafficLightBulb_Margin_Top"></div>
+                                <div class="trafficLightBulb yellow"></div>
+        
+                                <div class="trafficLightBulb_Margin_Top"></div>
+                                <div class="trafficLightBulb green"></div>
+        
+                            </div>
+                        </div>
+        
+                        <div class="description description_<%= index %>">
+                            <p class="description_p_<%= index %>"></p>
+                        </div>
     
-                    <div class="trafficLight trafficLight_<%= index %>  <%= element.color %>">
-                        <div class="trafficLightBulbMarginLeft"></div>
-    
-                        <div class="trafficLightBulb_Wrapper">
-                            <div class="trafficLightBulb_Margin_Top"></div>
-                            <div class="trafficLightBulb red"></div>
-    
-                            <div class="trafficLightBulb_Margin_Top"></div>
-                            <div class="trafficLightBulb yellow"></div>
-    
-                            <div class="trafficLightBulb_Margin_Top"></div>
-                            <div class="trafficLightBulb green"></div>
-    
+                        <div class="moreButton moreButton_<%= index %>" onclick="openCard(this, <%= index %>, '<%= element.description %>')">
+                            <p class="moreButton_p_<%= index %>">Details</p>
                         </div>
                     </div>
     
-                    <div class="description description_<%= index %>">
-                        <p class="description_p_<%= index %>"></p>
-                    </div>
-
-                    <div class="moreButton moreButton_<%= index %>" onclick="openCard(this, <%= index %>, '<%= element.description %>')">
-                        <p class="moreButton_p_<%= index %>">Details</p>
-                    </div>
+                    
                 </div>
             <% }); %>
 

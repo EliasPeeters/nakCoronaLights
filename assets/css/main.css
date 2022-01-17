@@ -220,4 +220,35 @@ body {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 320px) {
+  .contentWrapper .card .trafficLight {
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+  .contentWrapper .card .trafficLight {
+    top: 22%;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 375px) {
+  .contentWrapper .card .trafficLight {
+    top: 17%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 400px) {
+  .contentWrapper .card .trafficLight {
+    top: 15%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 425px) {
+  .contentWrapper .card .trafficLight {
+    top: 12%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 450px) {
+  .contentWrapper .card .trafficLight {
+    top: 9%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
