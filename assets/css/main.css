@@ -24,12 +24,10 @@ body {
   70% {
     transform: rotate(90deg);
     left: 18%;
-    top: 5%;
   }
   100% {
     transform: rotate(90deg);
     left: 18%;
-    top: 5%;
   }
 }
 @keyframes open_card {
