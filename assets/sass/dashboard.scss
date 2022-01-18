@@ -47,6 +47,11 @@
         width: calc(100% - 20px);
     }
 
+    .orderInput {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
     .submitButton {
         width: calc(100% - 20px);
         box-shadow: 0 0 10px rgba(1,1,1,0.2);

@@ -32,8 +32,12 @@
                         <option <%= element.red %> value="Red">Red</option>
                       </select>
     
+                    <input class="orderInput order<%= index %>" name="order" value="<%= element.orderNumber %>">
+
                     <textarea class="textarea description<%= index %>"><%= element.description %></textarea>
     
+                    
+
                     <div class="submitButton" onclick="sendSave(<%= index %>, <%= element.id %>)">
                         <p>Speichern</p>
                     </div>
@@ -51,11 +55,13 @@
                     <input placeholder="Heading..." class="dashboardCard_Heading heading<%= data.length + 1 %>" type="text" value="">
                 </div>
 
+            
                 <select class="color color<%= data.length + 1 %>">
                     <option  value="green">Green</option>
                     <option  value="Yellow">Yellow</option>
                     <option value="Red">Red</option>
-                  </select>
+                </select>
+
 
                 <textarea class="textarea description<%= data.length + 1 %>"></textarea>
 
