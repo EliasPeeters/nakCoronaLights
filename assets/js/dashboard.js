@@ -4,10 +4,6 @@ function sendSave(id, idDB, newCard = false) {
     let description = document.getElementsByClassName(`description${id}`)[0].value;
     let orderNumber = document.getElementsByClassName(`order${id}`)[0].value;
 
-    console.log(heading);
-    console.log(color);
-    console.log(description);
-
     if (newCard) {
         window.location = `/new?heading=${heading}&color=${color}&description=${description}`    
     } else {
