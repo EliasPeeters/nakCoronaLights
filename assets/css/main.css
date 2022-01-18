@@ -35,13 +35,13 @@ body {
     max-height: 130px;
   }
   100% {
-    max-height: 800px;
+    max-height: 1400px;
     min-height: 290px;
   }
 }
 @keyframes close_card {
   0% {
-    max-height: 800px;
+    max-height: 1400px;
   }
   100% {
     max-height: 130px;
@@ -72,22 +72,18 @@ body {
 }
 @keyframes open_moreButton {
   0% {
-    top: 50%;
-  }
-  60% {
-    top: 88%;
+    bottom: 20%;
   }
   100% {
-    top: initial;
     bottom: 4%;
   }
 }
 @keyframes close_moreButton {
   0% {
-    top: 80%;
+    bottom: 4%;
   }
   100% {
-    top: 50%;
+    bottom: 20%;
   }
 }
 .contentWrapper {
@@ -189,7 +185,7 @@ body {
   right: 8%;
   box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
   border-radius: 10px;
-  top: 50%;
+  bottom: 20%;
   padding: 10px;
   position: absolute;
   width: 30%;
@@ -216,7 +212,16 @@ body {
   color: #00387A;
   opacity: 1;
 }
-.contentWrapper .footer .corona_Melden {
+.contentWrapper .footer .impressum {
+  opacity: 0.5;
+  color: black;
+  text-decoration: none;
+  transition: 300ms;
+}
+.contentWrapper .footer .impressum:hover {
+  text-decoration: underline;
+}
+.contentWrapper .corona_Melden {
   border-radius: 10px;
   text-decoration: none;
   background-color: #FF3A36;
@@ -230,20 +235,28 @@ body {
   justify-content: space-around;
   cursor: pointer;
 }
-.contentWrapper .footer .corona_Melden.stupa {
+.contentWrapper .corona_Melden.stupa {
   background-color: #00387A;
 }
-.contentWrapper .footer .corona_Melden .corona_Melden_Wrapper {
+.contentWrapper .corona_Melden.backButton {
+  background-color: rgba(1, 1, 1, 0.2);
+}
+.contentWrapper .corona_Melden .corona_Melden_Wrapper {
   display: flex;
 }
-.contentWrapper .footer .corona_Melden .corona_Melden_Wrapper p {
+.contentWrapper .corona_Melden .corona_Melden_Wrapper p {
   opacity: 1 !important;
   margin-top: 4px;
   margin-left: 5px;
 }
-.contentWrapper .footer .corona_Melden .corona_Melden_Wrapper .corona {
+.contentWrapper .corona_Melden .corona_Melden_Wrapper .corona {
   margin-top: -6px;
   height: 45px;
+}
+.contentWrapper .corona_Melden .corona_Melden_Wrapper .backIcon {
+  height: 25px;
+  margin-top: 2px;
+  margin-right: 5px;
 }
 
 @media only screen and (max-width: 320px) {

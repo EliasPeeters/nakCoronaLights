@@ -1,0 +1,42 @@
+$blue: #00387A;
+$red: #FF3A36;
+
+.message {
+    color: $red;
+}
+
+form {
+    input {
+        border: none;
+        box-shadow: 0 0 10px rgba(1,1,1,0.2);
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 30px;
+
+        &:focus {
+            outline: $blue;
+        }
+
+        
+    }
+
+
+
+    label {
+        margin-left: 5%;
+        opacity: 0.5;
+    }
+
+    .submit {
+        background-color: $blue;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

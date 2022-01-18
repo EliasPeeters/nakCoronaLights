@@ -1,0 +1,32 @@
+.message {
+  color: #FF3A36;
+}
+
+form input {
+  border: none;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+form input:focus {
+  outline: #00387A;
+}
+form label {
+  margin-left: 5%;
+  opacity: 0.5;
+}
+form .submit {
+  background-color: #00387A;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+form .submit:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=login.css.map */

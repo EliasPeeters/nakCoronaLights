@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>NAK Corona Lights</title>
+        <link href="/assets/css/main.css" rel="stylesheet">
+        <link href="/assets/css/impressum.css" rel="stylesheet">
+        <link href="/assets/css/login.css" rel="stylesheet">
+        <script data-goatcounter="https://nakcoronalights.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+        
+    </head>
+
+    <body>
+        <div class="contentWrapper">
+            <img class="logo" src="/assets/images/logo.png">
+
+            <h1>Login</h1>
+
+            <p class="message"><%= message %> </p>
+
+            <form id="form" method="post" action="/login">
+                <label>Username</label>
+                <input type="text" name="username"><br>
+
+                <label>Passwort</label>
+                <input id="pwd" type="password" name="password"><br>
+                <input onclick="login()" class="submit" type="submit">
+            </form>
+
+
+            <div class="footer">
+                <div class="corona_Melden backButton" onclick="window.location = '/'">
+                    <div class="corona_Melden_Wrapper" >
+                        <img class="backIcon" src="/assets/images/back.png">
+                        <p>Zurück</p>
+                    </div>
+                </div>
+
+                <div class="corona_Melden backButton" onclick="window.location = '/download'">
+                    <div class="corona_Melden_Wrapper" >
+                        <img class="backIcon" src="/assets/images/down.png">
+                        <p>Materialien runterladen</p>
+                    </div>
+                </div>
+                
+                <div class="corona_Melden" onclick="mail('corona@nordakademie.de')">
+                    <div class="corona_Melden_Wrapper" >
+                        <img class="corona" src="/assets/images/corona.png">
+                        <p>Fall melden</p>
+                    </div>
+                </div>
+
+                <div class="corona_Melden stupa" onclick="mail('stupa@nordakademie.de')">
+                    <div class="corona_Melden_Wrapper">
+                        <img class="corona" src="/assets/images/stupa.png">
+                        <p>StuPa kontaktieren</p>
+                    </div>
+                </div>
+
+
+                <p>© 2022, Elias Peeters</p>
+
+                <a class="impressum" href="/impressum">Impressum</a>
+            </div>
+   
+        </div>
+    
+        <script src="/assets/js/openCards.js"></script>
+        <script src="/assets/js/login.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+
+        <script>
+            function mail(adress) {
+                window.location.href = `mailto:${adress}`;
+            }
+        </script>
+    </body>
+</html>
