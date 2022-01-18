@@ -6,4 +6,12 @@ p {
   text-align: center;
 }
 
+a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+
 /*# sourceMappingURL=impressum.css.map */
