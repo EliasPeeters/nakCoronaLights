@@ -1,0 +1,348 @@
+body {
+  margin: 0;
+  font-family: "Avenir";
+}
+
+@keyframes open_trafficLight {
+  30% {
+    transform: rotate(90deg);
+    left: 18%;
+    top: 5%;
+  }
+  100% {
+    left: 8%;
+    top: 25%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes close_trafficLight {
+  0% {
+    left: 8%;
+    top: 25%;
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(90deg);
+    left: 18%;
+  }
+  100% {
+    transform: rotate(90deg);
+    left: 18%;
+  }
+}
+@keyframes open_card {
+  0% {
+    max-height: 130px;
+  }
+  100% {
+    max-height: 1400px;
+    min-height: 290px;
+  }
+}
+@keyframes close_card {
+  0% {
+    max-height: 1400px;
+  }
+  100% {
+    max-height: 130px;
+    min-height: 0px;
+  }
+}
+@keyframes open_Description {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes close_Description {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes open_moreButton {
+  0% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 4%;
+  }
+}
+@keyframes close_moreButton {
+  0% {
+    bottom: 4%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+.contentWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contentWrapper .logo {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+.contentWrapper .card {
+  width: 80%;
+  margin-left: 10%;
+  max-height: 130px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: 300ms;
+  animation-delay: 1500ms;
+}
+.contentWrapper .card .card_Heading_Div {
+  background-color: #00387A;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 20px;
+}
+.contentWrapper .card .card_Heading_Div .card_Heading {
+  color: white;
+  margin: 0;
+}
+.contentWrapper .card .trafficLight {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 18%;
+  top: 5%;
+  height: 33vw;
+  width: 13vw;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 10px;
+  max-width: 59px;
+  max-height: 159px;
+  animation-delay: 2s;
+}
+.contentWrapper .card .trafficLight .trafficLightBulbMarginLeft {
+  width: 3vw;
+  max-width: 13.5px;
+  height: 100%;
+  float: left;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Margin_Top {
+  height: 3vw;
+  max-height: 16px;
+  width: 100%;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper {
+  display: grid;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb {
+  width: 7vw;
+  max-width: 32px;
+  height: 7vw;
+  max-height: 32px;
+  background-color: #00387A;
+  border-radius: 1000px;
+  opacity: 0.2;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.red {
+  background-color: #FF3A36;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.yellow {
+  background-color: #FFDA00;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.green {
+  background-color: #00BC2B;
+}
+.contentWrapper .card .trafficLight .trafficLightBulb_Wrapper .trafficLightBulb.selected {
+  opacity: 1;
+}
+.contentWrapper .card .trafficLight.red .trafficLightBulb_Wrapper .trafficLightBulb.red {
+  opacity: 1;
+}
+.contentWrapper .card .trafficLight.yellow .trafficLightBulb_Wrapper .trafficLightBulb.yellow {
+  opacity: 1;
+}
+.contentWrapper .card .trafficLight.green .trafficLightBulb_Wrapper .trafficLightBulb.green {
+  opacity: 1;
+}
+.contentWrapper .card .description {
+  padding-left: 30%;
+  padding-right: 10%;
+  min-height: 100px;
+  padding-bottom: 70px;
+}
+.contentWrapper .card .description p {
+  display: inline-block;
+}
+.contentWrapper .card .moreButton {
+  right: 8%;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 10px;
+  bottom: 20%;
+  padding: 10px;
+  position: absolute;
+  width: 30%;
+  text-align: center;
+}
+.contentWrapper .card .moreButton p {
+  margin: 0;
+}
+.contentWrapper .card .moreButton:hover {
+  cursor: pointer;
+}
+.contentWrapper .footer {
+  width: 90%;
+  min-height: 50px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 5%;
+}
+.contentWrapper .footer p {
+  opacity: 0.5;
+  margin-top: 40px;
+}
+.contentWrapper .footer .mail {
+  color: #00387A;
+  opacity: 1;
+}
+.contentWrapper .footer .impressum {
+  opacity: 0.5;
+  color: black;
+  text-decoration: none;
+  transition: 300ms;
+}
+.contentWrapper .footer .impressum:hover {
+  text-decoration: underline;
+}
+.contentWrapper .corona_Melden {
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #FF3A36;
+  width: 70%;
+  margin-left: 10%;
+  padding: 5%;
+  color: white;
+  margin-bottom: 20px;
+  display: flex;
+  height: 33px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.contentWrapper .corona_Melden.stupa {
+  background-color: #00387A;
+}
+.contentWrapper .corona_Melden.backButton {
+  background-color: rgba(1, 1, 1, 0.2);
+}
+.contentWrapper .corona_Melden .corona_Melden_Wrapper {
+  display: flex;
+}
+.contentWrapper .corona_Melden .corona_Melden_Wrapper p {
+  opacity: 1 !important;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.contentWrapper .corona_Melden .corona_Melden_Wrapper .corona {
+  margin-top: -6px;
+  height: 45px;
+}
+.contentWrapper .corona_Melden .corona_Melden_Wrapper .backIcon {
+  height: 25px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 320px) {
+  .contentWrapper .card .trafficLight {
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+  .contentWrapper .card .trafficLight {
+    top: 22%;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 375px) {
+  .contentWrapper .card .trafficLight {
+    top: 17%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 400px) {
+  .contentWrapper .card .trafficLight {
+    top: 15%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 425px) {
+  .contentWrapper .card .trafficLight {
+    top: 12%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 450px) {
+  .contentWrapper .card .trafficLight {
+    top: 9%;
+  }
+}
+.messageDashboard {
+  color: #00BC2B;
+}
+
+.dashboardCard {
+  width: 80%;
+  margin-left: 10%;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 20px;
+  min-height: 150px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.dashboardCard .dashboardCard_Heading_div {
+  background-color: #00387A;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 20px;
+}
+.dashboardCard .dashboardCard_Heading_div .dashboardCard_Heading {
+  color: white;
+  margin: 0;
+  background-color: #00387A;
+  box-shadow: none;
+  border: none;
+  font-size: 20px;
+}
+.dashboardCard .dashboardCard_Heading_div .dashboardCard_Heading:focus {
+  outline: none;
+}
+.dashboardCard .textarea {
+  width: calc(100% - 20px);
+  min-width: calc(100% - 20px);
+  max-width: calc(100% - 20px);
+  min-height: 80px;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.dashboardCard .color {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+.dashboardCard .submitButton {
+  width: calc(100% - 20px);
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  padding: 10px 0;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.dashboardCard .submitButton:hover {
+  cursor: pointer;
+}
+.dashboardCard .submitButton p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

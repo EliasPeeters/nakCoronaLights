@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>NAK Corona Lights</title>
+        <link href="/assets/css/main.css" rel="stylesheet">
+        <link href="/assets/css/impressum.css" rel="stylesheet">
+        <link href="/assets/css/login.css" rel="stylesheet">
+        <link href="/assets/css/dashboard.css" rel="stylesheet">
+        <script data-goatcounter="https://nakcoronalights.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+        
+    </head>
+
+    <body>
+        <div class="contentWrapper">
+            <img class="logo" src="/assets/images/logo.png">
+
+            <h1>Dashboard</h1>
+
+            <p class="messageDashboard"><%= message %> </p>
+
+            <% data.forEach((element, index) => { %>
+                <div class="dashboardCard ">
+                    <div class="dashboardCard_Heading_div">
+                        <input class="dashboardCard_Heading heading<%= index %>" type="text" value="<%= element.heading %>">
+                    </div>
+    
+                    <select class="color color<%= index %>">
+                        <option <%= element.green %>  value="green">Green</option>
+                        <option <%= element.yellow %> value="Yellow">Yellow</option>
+                        <option <%= element.red %> value="Red">Red</option>
+                      </select>
+    
+                    <textarea class="textarea description<%= index %>"><%= element.description %></textarea>
+    
+                    <div class="submitButton" onclick="sendSave(<%= index %>, <%= element.id %>)">
+                        <p>Speichern</p>
+                    </div>
+                </div>
+            <% }); %>
+
+            <p>New Card</p>
+
+            <div class="dashboardCard">
+                <div class="dashboardCard_Heading_div">
+                    <input placeholder="Heading..." class="dashboardCard_Heading heading<%= data.length + 1 %>" type="text" value="">
+                </div>
+
+                <select class="color color<%= data.length + 1 %>">
+                    <option  value="green">Green</option>
+                    <option  value="Yellow">Yellow</option>
+                    <option value="Red">Red</option>
+                  </select>
+
+                <textarea class="textarea description<%= data.length + 1 %>"></textarea>
+
+                <div class="submitButton" onclick="sendSave(<%= data.length + 1 %>, -1, true)">
+                    <p>Speichern</p>
+                </div>
+            </div>
+
+
+
+            <div class="footer">
+                <div class="corona_Melden backButton" onclick="window.location = '/'">
+                    <div class="corona_Melden_Wrapper" >
+                        <img class="backIcon" src="/assets/images/back.png">
+                        <p>Zurück</p>
+                    </div>
+                </div>
+
+                <div class="corona_Melden backButton" onclick="window.location = '/download'">
+                    <div class="corona_Melden_Wrapper" >
+                        <img class="backIcon" src="/assets/images/down.png">
+                        <p>Materialien runterladen</p>
+                    </div>
+                </div>
+                
+                <div class="corona_Melden" onclick="mail('corona@nordakademie.de')">
+                    <div class="corona_Melden_Wrapper" >
+                        <img class="corona" src="/assets/images/corona.png">
+                        <p>Fall melden</p>
+                    </div>
+                </div>
+
+                <div class="corona_Melden stupa" onclick="mail('stupa@nordakademie.de')">
+                    <div class="corona_Melden_Wrapper">
+                        <img class="corona" src="/assets/images/stupa.png">
+                        <p>StuPa kontaktieren</p>
+                    </div>
+                </div>
+
+
+                <p>© 2022, Elias Peeters</p>
+
+                <a class="impressum" href="/impressum">Impressum</a>
+            </div>
+   
+        </div>
+    
+        <script src="/assets/js/openCards.js"></script>
+        <script src="/assets/js/dashboard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+
+        <script>
+            function mail(adress) {
+                window.location.href = `mailto:${adress}`;
+            }
+        </script>
+    </body>
+</html>
