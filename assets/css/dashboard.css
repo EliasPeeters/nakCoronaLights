@@ -6,12 +6,14 @@ body {
 @keyframes open_trafficLight {
   30% {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     left: 18%;
     top: 5%;
   }
   100% {
     left: 8%;
     top: 25%;
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
@@ -20,13 +22,16 @@ body {
     left: 8%;
     top: 25%;
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   70% {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     left: 18%;
   }
   100% {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     left: 18%;
   }
 }
@@ -220,6 +225,9 @@ body {
 }
 .contentWrapper .footer .impressum:hover {
   text-decoration: underline;
+}
+.contentWrapper .footer .logoFooter {
+  width: 50%;
 }
 .contentWrapper .corona_Melden {
   border-radius: 10px;
