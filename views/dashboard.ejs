@@ -37,6 +37,10 @@
                     <div class="submitButton" onclick="sendSave(<%= index %>, <%= element.id %>)">
                         <p>Speichern</p>
                     </div>
+
+                    <div class="submitButton deleteButton" onclick="deleteButton(<%= element.id %>)">
+                        <p>Delete</p>
+                    </div>
                 </div>
             <% }); %>
 

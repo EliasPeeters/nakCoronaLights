@@ -13,3 +13,7 @@ function sendSave(id, idDB, newCard = false) {
         window.location = `/save?id=${idDB}&heading=${heading}&color=${color}&description=${description}`
     }
 }
+
+function deleteButton(id) {
+    window.location = `/delete?id=${id}`
+}

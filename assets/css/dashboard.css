@@ -337,12 +337,17 @@ body {
   padding: 10px 0;
   margin-left: 10px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .dashboardCard .submitButton:hover {
   cursor: pointer;
 }
 .dashboardCard .submitButton p {
   margin: 0;
+}
+.dashboardCard .submitButton.deleteButton {
+  color: white;
+  background-color: #FF3A36;
 }
 
 /*# sourceMappingURL=dashboard.css.map */

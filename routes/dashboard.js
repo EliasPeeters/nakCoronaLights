@@ -48,3 +48,14 @@ app.get('/new', async(req, res) => {
     }
 })
 
+
+app.get('/delete', async(req, res) => {
+    let id = req.cookies.id == undefined? '':req.cookies.id;
+
+    if (logins.includes(id)) {
+        connection.asyncquery(`DELETE FROM nakCoronaLights WHERE id=${req.query.id};`)
+        res.redirect('/dashboard?message=Gelöscht')
+    } else {
+        res.redirect('/login?message=Nicht angemeldet')
+    }
+})
