@@ -229,6 +229,9 @@ body {
 .contentWrapper .footer .logoFooter {
   width: 50%;
 }
+.contentWrapper .footer .downloadButton {
+  display: none;
+}
 .contentWrapper .corona_Melden {
   border-radius: 10px;
   text-decoration: none;
