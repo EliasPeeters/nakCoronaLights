@@ -120,6 +120,11 @@ body {
   color: white;
   margin: 0;
 }
+@media (max-width: 466px) {
+  .contentWrapper .card .card_Heading_Div .card_Heading.longText {
+    font-size: 3.6vw;
+  }
+}
 .contentWrapper .card .trafficLight {
   transform: rotate(90deg);
   position: absolute;

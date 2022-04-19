@@ -20,7 +20,7 @@
             <% data.forEach((element, index) => { %>
                 <div class="card card_<%= index %>">
                     <div class="card_Heading_Div">
-                        <h3 class="card_Heading"><%= element.heading %> </h3>
+                        <h3 class="card_Heading <%= element.heading.length %> <% if(element.heading.length > 22) {%> longText <% }  %>"><%= element.heading %> </h3>
                     </div>
 
                     <div class="contentwrapper">

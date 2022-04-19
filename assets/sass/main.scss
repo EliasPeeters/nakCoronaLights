@@ -145,6 +145,12 @@ body {
             .card_Heading {
                 color: white;
                 margin: 0;
+
+                &.longText {
+                    @media (max-width: 466px) {
+                        font-size: 3.6vw;
+                    }
+                }
             }
         }
 
