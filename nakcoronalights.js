@@ -23,7 +23,7 @@ let loginRoute = require('./routes/login');
 let dashboardRoute = require('./routes/dashboard');
 
 
-const port = 8092;
+let port = process.env.ENV == 'DEVELOP' ? 8095:8092;
 
 app.listen(port, ()=> {
     console.log(`Running on ${port}`)

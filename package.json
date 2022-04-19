@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass ./assets/sass/:./assets/css/",
     "start-local": "node nakcoronalights.js",
-    "start-live": "git reset --hard; git pull; npm i; npm run sass; forever restart nakcoronalights.js"
+    "start-live": "git reset --hard; git pull; npm i; npm run sass; forever restart nakcoronalights.js",
+    "start-develop": "git reset --hard; git pull; npm i; npm run sass; pm2 restart nakcoronalightsDevelop"
   },
   "repository": {
     "type": "git",
