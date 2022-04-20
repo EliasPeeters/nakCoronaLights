@@ -36,13 +36,20 @@
         
                                 <div class="trafficLightBulb_Margin_Top"></div>
                                 <div class="trafficLightBulb green"></div>
-        
                             </div>
                         </div>
         
                         <div class="description description_<%= index %>">
                             <p class="description_p_<%= index %>"></p>
                         </div>
+
+                        <% if (element.buttonCaption) { %>
+                            <div class="openButton openButton_<%= index %>" onclick="openInNewTab('<%= element.buttonLink %>')">
+                                <p><%= element.buttonCaption %></p>
+                            </div>
+                        <% } %>
+
+                        
     
                         <div class="moreButton moreButton_<%= index %>" onclick="openCard(this, <%= index %>, '<%= element.description %>')">
                             <p class="moreButton_p_<%= index %>">Details</p>
@@ -92,6 +99,11 @@
             function mail(adress) {
                 window.location.href = `mailto:${adress}`;
             }
+
+            function openInNewTab(url) {
+                window.open(url, '_blank').focus();
+            }
+
         </script>
     </body>
 </html>
