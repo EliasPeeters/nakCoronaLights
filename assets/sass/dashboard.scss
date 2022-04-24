@@ -32,6 +32,10 @@
         }
     }
 
+    .label {
+        margin-left: 10px;
+    }
+
     .textarea {
         width: calc(100% - 20px);
         min-width: calc(100% - 20px);
@@ -50,6 +54,7 @@
     .orderInput {
         width: calc(100% - 20px);
         margin: 10px;
+        margin-bottom: 30px;
     }
 
     .submitButton {
